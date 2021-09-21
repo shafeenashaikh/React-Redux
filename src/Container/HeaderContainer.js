@@ -1,9 +1,8 @@
 import {connect} from 'react-redux';
 import Header from  '../Redux-Compoment/Header';
-import { addToCart } from '../Services/Action/action';
 
 const mapStateToProps=state => ({
-
+    data:state.cardItems
 })
 
 const mapDispatchToProps=dispatch=>({
