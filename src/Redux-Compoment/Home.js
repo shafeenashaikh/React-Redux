@@ -1,11 +1,9 @@
 import React from "react"
-function Home(){
-    
+function Home(props){
+    console.log("props",props)
     return(
         <div>
-            <div className="add-to-cart">
-                <img src="/C:\Users\intel\Desktop\redux-tut\src\img\cart.jpg"/>
-            </div>
+          
             <h2>Home component</h2>
             <div className="cart-wrapper">
                 <div className="imag-wrapper item">
@@ -20,7 +18,10 @@ function Home(){
                   </span>
                 </div>
                 <div className="btn-wrapper item">
-                    <button>Add to Cart</button>
+                    <button
+                    onClick={()=>
+                    props.addToCartHandler({price:1000,name: 'i phone 11'})
+                    }>Add to Cart</button>
                 </div>
             </div>
         </div>

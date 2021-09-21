@@ -3,7 +3,7 @@ import Home from  '../Redux-Compoment/Home';
 import { addToCart } from '../Services/Action/action';
 
 const mapStateToProps=state => ({
-
+    data:state.cardItems
 })
 
 const mapDispatchToProps=dispatch=>({
